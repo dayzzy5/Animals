@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact form</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Contant us, send a query"/>
+        <meta name="keywords" content="Contact, Query, email"/>
+        
+        <style>
+            body
+            {
+                font-family: sans-serif;
+                background-image: url(images/Saint_Peters.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 10px;
+            }
+            
+            main 
+            {
+                margin: 15px 280px;
+                padding: 20px;
+                border: black solid 1px;
+                background: white;
+                min-height: 500px;
+
+            }
+            
+            header p
+            {
+                font-style: italic;
+                text-align: center;
+                font-weight: 900;
+            }
+
+            .required 
+            {
+                font-weight: bold;
+                color: red;
+            }
+            
+            label 
+            {
+                float: left;
+                width: 112px;
+                padding-right: 10px;
+                text-align: right;
+            }
+
+            input 
+            {
+                margin-left: 1em;
+                margin-bottom: .5em;
+                width: 300px;
+            }
+            input[type="checkbox"] {width: 15px;}
+            input[type="radio"] {width: 10px;}
+
+            #button, #reset 
+            {
+                margin-top: .5em;
+                width: 8em;
+                background-color: orange;
+                border: 2px soild black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p> Any queries or feedback please Complete and Submit </p>
+        </header>
+        <main>
+            <section>
+                <h3>Please Enter Your Information: <form action="http://foo.com" method="get"> </h3>
+                <form action="http:/foo.com" method="post">
+                    <label for="first name"></label>First name: <span class="required">*</span></label>
+                    <input type="text" nane="first name" id="first name" autofocus reouired> <br>
+                    <label for="last name">Last name: <span class="required">*</span></label>
+                    <input type="text" name="last_name" id="last_name" required><br>
+                    <label for="email">Email:<span class="required">*</span></label>
+                    <input type="email" name="email" 1d="email" required placeholder="test@example.com"><br>
+                    <label for="gender">Gender :</label>
+                    <input type="radio" id= "gender" name="gender" value="female"> Male
+                    <input type="radio" id= "gender" name="gender" value="female"> Female
+                    <input type="radio" id= "gender" name="gender" value="other" checked> Other <br>
+                    <label for ="internet"> Heard of us:</label>
+                    <fieldset>
+                        <input type="checkbox" id="Internet" name="Internet" value="Internet" checked> Internet <br>
+                        <input type="checkbox" class="margin1" id="hear" name="paper" value="paper"> Newspaper <br>
+                        <input type="checkbox" class="margin1" id="hear" name="friend" value="paper"> Friend <br>
+                        <input type="checkbox" class="margin1" id="hearr" name="Add" value="paper"> Other <br>
+                    </fieldset><br>
+                    <label for="message">Query: </label>
+                    <textarea cols="50"ros="6"
+                    1d="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea><br>
+                    <input type="submit" name="submit" id="button" value="Submit">
+                    <input type="reset" name="reset" id="reset">
+                </form>
+                <p style="margin-left: 138px"> <span class="required">*</span> <em> indicates a required field </em></p>
+            </section>
+        </main>
+    </body>
+</html>
